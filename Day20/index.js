@@ -17,4 +17,20 @@ let angkatanAktualRoute = require('./angkatanaktual/angkatanAktualRoute');
 app.use('/api',angkatanAktualRoute);
 require('./konfigurasi/config');
 
+//rama
+
+let surattugasRoute = require('./surattugas/surattugasRoute.js');
+app.use('/api',surattugasRoute);
+
+let tipepegawaiRoute = require('./tipepegawai/tipepegawaiRoute.js');
+app.use('/api',tipepegawaiRoute);
+
+let pegawaiRoute = require('./pegawai/pegawaiRoute.js');
+app.use('/api',pegawaiRoute);
+
+let surattugasrinciRoute = require('./surattugasrinci/surattugasrinciRoute.js');
+app.use('/api',surattugasrinciRoute);
+
+
+
 app.listen(8820);
